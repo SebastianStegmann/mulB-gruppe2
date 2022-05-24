@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* colors */
+
+.own-bg-color {
+    background-color: #25303F;
+    color: white;
+}
+
+.own-bg-color-dark {
+    background-color: #050e1a;
+    color: white;
+}
+
+.navbar-color {
+    background-color: white;
+}
+
+
+/* scroll progress bar */
+
+#page-progressbarW {
+    width: 0%;
+    height: 4.2em;
+    background-color: #25303F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    #page-progressbarW {
+        width: 0%;
+        height: 3.8em;
+        background-color: #25303F;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 528px) {
+    #page-progressbarW {
+        width: 0%;
+        height: 4em;
+        background-color: #25303F;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+
+/* Body */
+
+h1,
+h2,
+h3,
+h4 {
+    font-style: bold;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+h2 {
+    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+ul li {
+    font-size: 0.8em;
+}
+
+.custom-top-bot {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* navbar */
+
+.navbar-nav a {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+    a.menuunderline {
+        position: relative;
+        font-size: 1em;
+        color: black;
+    }
+    .menuline li {
+        display: inline;
+        color: black;
+    }
+    .menuline a {
+        display: inline-block;
+        padding: 8px;
+    }
+    a.menuunderline:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+    a.menuunderline:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+
+/* Hero */
+
+.h1-lookalike {
+    font-size: 5em;
+}
+
+.hero-1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.bg-img {
+    background-image: url(img/guitar-hero.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #25303F;
+    background-blend-mode: hard-light;
+}
+
+.rightHalf {
+    background: url(img/guitar-hero.jpg);
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #25303F;
+    background-blend-mode: hard-light;
+}
+
+.letter-spacing-hero h1 {
+    letter-spacing: 0.2em;
+}
+
+.letter-spacing-hero h3 {
+    letter-spacing: 1em;
+    padding-left: 0.5em;
+}
+
+
+/* Content */
+
+@media only screen and (min-width: 1525px) {
+    .big-number-left {
+        font-size: 15em;
+        opacity: 20%;
+        position: relative;
+        left: -5.4em;
+    }
+    .big-number-right {
+        font-size: 15em;
+        opacity: 20%;
+        position: relative;
+        left: -2.45em;
+    }
+    .big-number-col-fix {
+        position: relative;
+        left: 7em;
+    }
+    .big-number-left p,
+    .big-number-right p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media only screen and (max-width: 1525px) {
+    .big-number-left,
+    .big-number-right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .border-left {
+        border-left: 1px solid lightgray;
+    }
+    .toolsneeded {
+        justify-content: center;
+    }
+}
+
+.content-y-fix {
+    margin-top: 15%;
+}
+
+
+/* video */
+
+.background-video {
+    max-width: 100%;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Modal*/
+
+.video-size {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* for video */
+
+.video-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.video-img a {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.video-top-bot {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+
+/* Overview */
+
+.icon-size {
+    width: 7.5em;
+}
+
+.overview-padding {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.icon-padding {
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* css guitar / Tuner */
+
+#neck {
+    background-image: url(img/rosewood.jpeg);
+    width: 325px;
+    height: 135px;
+    display: block;
+    overflow: none;
+}
+
+#string1 {
+    /* border: 2px solid transparent; */
+    /* padding: 10px 0px; */
+    background-image: url(img/steel2.jpeg);
+    width: 325px;
+    height: 1.5px;
+    position: relative;
+    top: 10px;
+}
+
+#string2 {
+    background-image: url(img/steel2.jpeg);
+    width: 325px;
+    height: 2.4px;
+    position: relative;
+    top: 27px;
+}
+
+#string3 {
+    background-image: url(img/steel2.jpeg);
+    width: 325px;
+    height: 3px;
+    position: relative;
+    top: 47px;
+}
+
+#string4 {
+    background-image: url(img/steel1.jpeg);
+    width: 325px;
+    height: 4px;
+    position: relative;
+    top: 65px;
+}
+
+#string5 {
+    background-image: url(img/steel1.jpeg);
+    width: 325px;
+    height: 5px;
+    position: relative;
+    top: 85px;
+}
+
+#string6 {
+    background-image: url(img/steel1.jpeg);
+    width: 325px;
+    height: 6px;
+    position: relative;
+    top: 100px;
+}
+
+#click1 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+#click2 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+#click3 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+#click4 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+#click5 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+#click6 {
+    background: transparent;
+    width: 325px;
+    height: 16.667%;
+    position: relative;
+    top: -22px;
+}
+
+.tunerhidden {
+    display: none;
+}
+
+.tunervisible {
+    display: block;
+}
+
+#tunerfretboard,
+#tunerbuttons {
+    width: 8em;
+}
+
+.tunerwhitespace {
+    width: auto;
+    height: 20em;
+}
+
+#letter1 {
+    position: relative;
+    left: -11.7em;
+    top: -0.7em;
+}
+
+#letter2 {
+    position: relative;
+    left: -11.7em;
+    top: -0.7em;
+}
+
+#letter3 {
+    position: relative;
+    left: -11.7em;
+    top: -0.7em;
+}
+
+#letter4 {
+    position: relative;
+    left: -11.7em;
+    top: -0.6em;
+}
+
+#letter5 {
+    position: relative;
+    left: -11.7em;
+    top: -0.6em;
+}
+
+#letter6 {
+    position: relative;
+    left: -11.7em;
+    top: -0.6em;
+}
+
+#fretboard p {
+    font-weight: 500;
+}
+
+
+/* Tuner buttons */
+
+.buttonstyle {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    /* font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.buttonpressed {
+    /* Makes button appear toggled on */
+    background-color: rgb(226, 226, 226);
+}
+
+
+/* Footer/Info */
+
+footer p {
+    font-size: 0.9em;
+    color: #8496B3;
+}
+
+footer a {
+    font-size: 0.9em;
+    color: #8496B3;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+.footer-mailto {
+    font-size: 0.9rem;
+}
+
+
+/* 404 */
+
+.padding-404 {
+    margin: 200em 0;
+}
